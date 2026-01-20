@@ -1,17 +1,13 @@
+# - FROM SERVERS TO CONTAINERS
 
-🔹 Explanation
-In the traditional method, everything runs directly on one operating system.
-
-🖥️ Hardware
+### 1.In the traditional method, everything runs directly on one operating system.
+#### - Hardware
 This is the physical machine
-
 Example: CPU, RAM, hard disk, network card
 
-💿 Operating System (OS)
+#### - Operating System (OS)
 A single OS is installed on the hardware
-
 Example: Windows, Linux, macOS
-
 This OS controls hardware and resources
 
 📦 Applications (App 1, App 2)
@@ -24,6 +20,8 @@ Share the same OS
 Share system libraries
 
 Share hardware resources
+
+<img width="1536" height="1024" alt="Image" src="https://github.com/user-attachments/assets/af2a1deb-ddbd-448c-ab1c-55d4226a4c10" />
 
 ⚠️ Problems with Traditional Method
 Dependency conflict
