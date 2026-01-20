@@ -1,58 +1,45 @@
-# - FROM SERVERS TO CONTAINERS
+# 🚀 From Servers to Containers
 
-### 1.In the traditional method, everything runs directly on one operating system.
-#### - Hardware
-This is the physical machine
-Example: CPU, RAM, hard disk, network card
+## 1. Traditional Method:  In the **traditional method**, everything runs directly on **one operating system**.
 
-#### - Operating System (OS)
-A single OS is installed on the hardware
-Example: Windows, Linux, macOS
-This OS controls hardware and resources
+###  Architecture Overview
 
-📦 Applications (App 1, App 2)
-Multiple applications are installed on the same OS
+####  Hardware:
+- This is the **physical machine**
+- Examples:CPU, RAM, Hard Disk, Network Card
 
-All apps:
+#### Operating System (OS):
+- A **single OS** is installed on the hardware
+- Examples: Windows, Linux, macOS
+   - The OS: Controls hardware, Manages system resources
 
-Share the same OS
+####  Applications (App 1, App 2):
+- Multiple applications are installed on the **same OS**
+- All applications: Share the same operating system, Share system libraries, Share hardware resources
 
-Share system libraries
+![Traditional Method Architecture](https://github.com/user-attachments/assets/af2a1deb-ddbd-448c-ab1c-55d4226a4c10)
 
-Share hardware resources
 
-<img width="1536" height="1024" alt="Image" src="https://github.com/user-attachments/assets/af2a1deb-ddbd-448c-ab1c-55d4226a4c10" />
+###  Problems with the Traditional Method
 
-⚠️ Problems with Traditional Method
-Dependency conflict
+####  Dependency Conflicts:
+- App 1 may require **Java 8**
+- App 2 may require **Java 11**
+- Same OS → **dependency conflict occurs**
 
-App 1 may need Java 8
+####  Poor Isolation
+- If **App 1 crashes**, it can affect **App 2**
 
-App 2 may need Java 11
+####  Scalability Issues
+- Difficult to scale **one application independently**
 
-Same OS → conflict happens ❌
+####  Resource Wastage
+- One application may consume too much: CPU
+  - RAM  
+- This negatively impacts other applications
 
-Poor isolation
+---
 
-If App 1 crashes, it can affect App 2
-
-Scalability issue
-
-Hard to scale one app independently
-
-Resource wastage
-
-One app may consume too much CPU/RAM and affect others
-
-📌 Real-life Example
-Think of it like:
-
-One kitchen (OS)
-
-Multiple dishes (apps)
-
-If one dish needs high flame, others may get spoiled 🔥🍲
-
-🧠 Summary (Easy Line)
-👉 In the traditional method, all applications run on one operating system, directly on hardware, which causes conflicts, low isolation, and scalability issues.
-
+##  Summary
+In the **traditional method**, all applications run on **one operating system**, directly on hardware.  
+This leads to **dependency conflicts, poor isolation, scalability challenges, and inefficient resource usage**.
