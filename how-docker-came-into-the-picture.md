@@ -15,8 +15,7 @@
 - Multiple applications are installed on the **same OS**
 - All applications: Share the same operating system, Share system libraries, Share hardware resources
 
-<img width="900" height="600" alt="Image" src="https://github.com/user-attachments/assets/338edd74-b55a-4628-97e7-76545ac22075" />
-###  Problems with the Traditional Method
+<img width="900" height="600" alt="Image" src="https://github.com/user-attachments/assets/9054b9e5-6b9c-4253-ba67-504e633f0d8c" />###  Problems with the Traditional Method
 
 ####  Dependency Conflicts:
 - App 1 may require **Java 8**
