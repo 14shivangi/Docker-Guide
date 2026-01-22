@@ -66,9 +66,9 @@ Each VM behaves like a **separate computer**
 
 1. Better Isolation: If **VM 1 crashes**, **VM 2 is not affected**
 2. Dependency Issues Solved: 
-- App 1 can use **Java 8**
-- App 2 can use **Java 11**
-- Each VM has its **own OS**
+   - App 1 can use **Java 8**
+   - App 2 can use **Java 11**
+   - Each VM has its **own OS**
 3. Better Resource Utilization: One physical server can run **multiple VMs**
 
 ## Problems with Virtualization
@@ -81,5 +81,5 @@ Each VM behaves like a **separate computer**
 ---
 ##  Summary
 - In the **traditional method**, all applications run on **one operating system**, directly on hardware.  
-This leads to **dependency conflicts, poor isolation, scalability challenges, and inefficient resource usage**.
+   This leads to **dependency conflicts, poor isolation, scalability challenges, and inefficient resource usage**.
 - **Virtualization solved dependency and isolation problems**, but it introduced **heavy resource usage and performance overhead** because **each VM requires a full operating system**.
