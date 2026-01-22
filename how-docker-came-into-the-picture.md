@@ -1,6 +1,7 @@
 # 🚀 From Servers to Containers
 
-## 1. Traditional Method:  In the **traditional method**, everything runs directly on **one operating system**.
+## 1. Traditional Method:  
+   - In the **traditional method**, everything runs directly on **one operating system**.
 
 <img width="900" height="600" alt="Image" src="https://github.com/user-attachments/assets/9054b9e5-6b9c-4253-ba67-504e633f0d8c" />
 
@@ -30,9 +31,13 @@
    - One application may consume too much: CPU, RAM  
    - This negatively impacts other applications
 
-## 2️. Virtualization: In **virtualization**, multiple **virtual machines (VMs)** run on **one physical machine**, and **each VM has its own operating system**.
+---
+
+## 2️. Virtualization: 
+   - In **virtualization**, multiple **virtual machines (VMs)** run on **one physical machine**, and **each VM has its own operating system**.
 
 <img width="900" height="600" alt="Image" src="https://github.com/user-attachments/assets/338edd74-b55a-4628-97e7-76545ac22075" />
+
 ####  Hardware:
 - The **physical server**
 -  Examples:CPU, RAM, Disk, Network
