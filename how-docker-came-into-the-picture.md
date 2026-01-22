@@ -15,8 +15,7 @@
 - Multiple applications are installed on the **same OS**
 - All applications: Share the same operating system, Share system libraries, Share hardware resources
 
-![Traditional Method Architecture](https://github.com/user-attachments/assets/af2a1deb-ddbd-448c-ab1c-55d4226a4c10)
-
+<img width="900" height="600" alt="Image" src="https://github.com/user-attachments/assets/338edd74-b55a-4628-97e7-76545ac22075" />
 ###  Problems with the Traditional Method
 
 ####  Dependency Conflicts:
@@ -38,7 +37,7 @@
 
 ## 2️. Virtualization: In **virtualization**, multiple **virtual machines (VMs)** run on **one physical machine**, and **each VM has its own operating system**.
 
-<img width="1000" height="800" alt="Image" src="https://github.com/user-attachments/assets/338edd74-b55a-4628-97e7-76545ac22075" />
+<img width="900" height="600" alt="Image" src="https://github.com/user-attachments/assets/338edd74-b55a-4628-97e7-76545ac22075" />
 ####  Hardware:
 - The **physical server**
 -  Examples:CPU, RAM, Disk, Network
