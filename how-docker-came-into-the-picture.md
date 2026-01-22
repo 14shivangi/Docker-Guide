@@ -38,7 +38,7 @@
 
 ## 2️. Virtualization: In **virtualization**, multiple **virtual machines (VMs)** run on **one physical machine**, and **each VM has its own operating system**.
 
-
+<img width="1000" height="800" alt="Image" src="https://github.com/user-attachments/assets/338edd74-b55a-4628-97e7-76545ac22075" />
 ####  Hardware:
 - The **physical server**
 -  Examples:CPU, RAM, Disk, Network
