@@ -35,87 +35,51 @@
 - This negatively impacts other applications
 
 ---
+
 ## 2️. Virtualization: In **virtualization**, multiple **virtual machines (VMs)** run on **one physical machine**, and **each VM has its own operating system**.
 
 
-####  Hardware
+####  Hardware:
 - The **physical server**
 -  Examples:CPU, RAM, Disk, Network
 
-
-####  Host Operating System
+####  Host Operating System:
 - Installed **directly on the hardware**
 - Examples:Linux, Windows Server
 - Provides the **base environment** for virtualization
 
-####  Hypervisor
+####  Hypervisor:  *Think of the hypervisor as a manager that divides one physical machine into many virtual computers.*
+
 - The **core component** of virtualization
 - Runs on top of the host OS
 - Responsible for: Creating virtual machines
   - Allocating CPU, RAM, and storage to each VM
   - Isolating VMs from each other
 
- *Think of the hypervisor as a manager that divides one physical machine into many virtual computers.*
-
----
-
 #### Virtual Machines (VMs)
-
 Each VM contains:
-- **VM 1**
-  - Its own OS (OS 1)
-  - Its own Application (App 1)
-- **VM 2**
-  - Its own OS (OS 2)
-  - Its own Application (App 2)
+- **VM 1** - Its own OS (OS 1). Its own Application (App 1)
+- **VM 2** - Its own OS (OS 2). Its own Application (App 2)
+Each VM behaves like a **separate computer**
 
-✔ Each VM behaves like a **separate computer**
+## Advantages of Virtualization
 
----
-
-## ✅ Advantages of Virtualization
-
-### ✔ Better Isolation
-- If **VM 1 crashes**, **VM 2 is not affected**
-
-### ✔ Dependency Issues Solved
+1. Better Isolation: If **VM 1 crashes**, **VM 2 is not affected**
+2. Dependency Issues Solved: 
 - App 1 can use **Java 8**
 - App 2 can use **Java 11**
 - Each VM has its **own OS**
+3. Better Resource Utilization: One physical server can run **multiple VMs**
 
-### ✔ Better Resource Utilization
-- One physical server can run **multiple VMs**
+## Problems with Virtualization
 
----
-
-## ❌ Problems with Virtualization
-
-### ❌ Heavy Resource Usage
-- Every VM has:
-  - Its own OS
-  - Its own memory
-- OS duplication leads to **resource wastage**
-
-### ❌ Slow Startup
-- Virtual machines take **minutes to boot**
-
-### ❌ High Cost
-- Requires more:
-  - RAM
-  - CPU
-  - Storage
-
-### ❌ Complex Management
-- OS patching and updates are needed for **every VM**
-
----
-
-## 🧠 Summary
-
-👉 **Virtualization solved dependency and isolation problems**, but it introduced **heavy resource usage and performance overhead** because **each VM requires a full operating system**.
-
+1. Heavy Resource Usage: Every VM has- Its own OS, Its own memory and OS duplication leads to **resource wastage**
+2. Slow Startup: Virtual machines take **minutes to boot**
+3. High Cost: It Requires more: RAM, CPU, Storage
+4. Complex Management: OS patching and updates are needed for **every VM**
 
 ---
 ##  Summary
-In the **traditional method**, all applications run on **one operating system**, directly on hardware.  
+- In the **traditional method**, all applications run on **one operating system**, directly on hardware.  
 This leads to **dependency conflicts, poor isolation, scalability challenges, and inefficient resource usage**.
+- **Virtualization solved dependency and isolation problems**, but it introduced **heavy resource usage and performance overhead** because **each VM requires a full operating system**.
