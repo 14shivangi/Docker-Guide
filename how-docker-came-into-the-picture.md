@@ -3,7 +3,7 @@
 ## 1. Traditional Method:  
    - In the **traditional method**, everything runs directly on **one operating system**.
 
-<img width="900" height="600" alt="Image" src="https://github.com/user-attachments/assets/9054b9e5-6b9c-4253-ba67-504e633f0d8c" />
+<img width="600" height="300" alt="Image" src="https://github.com/user-attachments/assets/9054b9e5-6b9c-4253-ba67-504e633f0d8c" />
 
 ####  Hardware:
 - This is the **physical machine**
@@ -36,7 +36,7 @@
 ## 2️. Virtualization: 
    - In **virtualization**, multiple **virtual machines (VMs)** run on **one physical machine**, and **each VM has its own operating system**.
 
-<img width="900" height="600" alt="Image" src="https://github.com/user-attachments/assets/338edd74-b55a-4628-97e7-76545ac22075" />
+<img width="600" height="300" alt="Image" src="https://github.com/user-attachments/assets/338edd74-b55a-4628-97e7-76545ac22075" />
 
 ####  Hardware:
 - The **physical server**
@@ -76,7 +76,7 @@ Each VM behaves like a **separate computer**
 
 ---
 ## 3️. Docker / Containerization
-<img width="900" height="600" alt="Image" src="https://github.com/user-attachments/assets/93bc995e-7b5a-4737-9ade-d3c8bd30454f" />
+<img width="600" height="300" alt="Image" src="https://github.com/user-attachments/assets/93bc995e-7b5a-4737-9ade-d3c8bd30454f" />
 In **containerization**, multiple applications run as **containers** on **one operating system**, using a **Docker Engine** instead of a hypervisor.
   - Containers do **NOT** need a full operating system of their own.
 ####  Hardware
