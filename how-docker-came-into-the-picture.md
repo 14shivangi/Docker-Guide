@@ -75,7 +75,69 @@ Each VM behaves like a **separate computer**
 4. Complex Management: OS patching and updates are needed for **every VM**
 
 ---
-##  Summary
+## 3️. Docker / Containerization
+<img width="900" height="600" alt="Image" src="https://github.com/user-attachments/assets/93bc995e-7b5a-4737-9ade-d3c8bd30454f" />
+In **containerization**, multiple applications run as **containers** on **one operating system**, using a **Docker Engine** instead of a hypervisor.
+  - Containers do **NOT** need a full operating system of their own.
+####  Hardware
+- The physical machine
+- Examples: CPU, RAM, Disk, Network
+
+####  Operating System
+- A single OS installed on the hardware
+- Usually: Linux (most common)
+   - Windows (for Windows containers)
+   - This OS provides the **kernel**
+ *The kernel is shared by all containers.*
+
+####  Docker Engine
+- The **heart of containerization**
+- Runs on top of the operating system
+- Responsible for: Creating containers, Running containers, Managing images, networking, and storage
+*Think of Docker Engine as a lightweight container manager, not a VM manager.*
+
+####  Containers (con1, con2)
+Each container includes: - Application (App 1 / App 2), Required libraries and dependencies
+- Containers do **NOT** include:
+   - A full operating system
+   - Their own kernel
+ All containers **share the host OS kernel**
+
+####  Virtual Machines vs Containers
+
+| Virtual Machines | Containers |
+|------------------|------------|
+| Each VM has its own OS | Containers share the OS kernel |
+| Heavy and slow | Lightweight and fast |
+| Takes minutes to start | Starts in seconds |
+| High resource usage | Low resource usage |
+
+#### Advantages of Docker / Containerization
+1. Lightweight
+   - No OS duplication
+   - Uses less CPU and RAM
+2. Fast Startup
+   - Containers start in **seconds**
+3. Better Resource Utilization
+   - More applications can run on the same machine
+4. Consistent Environment
+   - Solves the *“works on my machine”* problem
+   - Same container runs everywhere
+5. Easy Scalability
+   - Applications can be scaled up or down quickly
+
+#### Limitations of Containers
+- Containers share the same OS kernel
+- Less isolation compared to virtual machines (but sufficient for most use cases)
+- Mostly Linux-based (Windows support is improving)
+
+**Docker solved the performance and resource problems of virtualization by removing the need for a full OS per application and running apps as lightweight containers on a shared OS kernel.**
+
+---
+
 - In the **traditional method**, all applications run on **one operating system**, directly on hardware.  
-   This leads to **dependency conflicts, poor isolation, scalability challenges, and inefficient resource usage**.
-- **Virtualization solved dependency and isolation problems**, but it introduced **heavy resource usage and performance overhead** because **each VM requires a full operating system**.
+  This causes **dependency conflicts, poor isolation, scalability issues, and inefficient resource usage**.
+
+- **Virtualization** solved dependency and isolation problems, but introduced **heavy resource usage and performance overhead** because **each VM requires a full operating system**.
+
+- **Docker / Containerization** removed OS duplication and provided a **lightweight, fast, and scalable** way to run applications.
