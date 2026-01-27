@@ -77,6 +77,8 @@ Each VM behaves like a **separate computer**
 ---
 ## 3️. Docker / Containerization:
 <img width="600" height="300" alt="Image" src="https://github.com/user-attachments/assets/93bc995e-7b5a-4737-9ade-d3c8bd30454f" />
+
+
 In **containerization**, multiple applications run as **containers** on **one operating system**, using a **Docker Engine** instead of a hypervisor.
   - Containers do **NOT** need a full operating system of their own.
 ####  Hardware:
