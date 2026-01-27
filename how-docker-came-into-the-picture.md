@@ -18,18 +18,18 @@
 - Multiple applications are installed on the **same OS**
 - All applications: Share the same operating system, Share system libraries, Share hardware resources
 
-####  Problems with the Traditional Method
+####  Problems with the Traditional Method:
 1. Dependency Conflicts:
    - App 1 may require **Java 8**
    - App 2 may require **Java 11**
    - Same OS → **dependency conflict occurs**
-2. Poor Isolation
+2. Poor Isolation:
    - If **App 1 crashes**, it can affect **App 2**
-3. Scalability Issues
+3. Scalability Issues:
    - Difficult to scale **one application independently**
-4.  Resource Wastage
-   - One application may consume too much: CPU, RAM  
-   - This negatively impacts other applications
+4.  Resource Wastage:
+      - One application may consume too much: CPU, RAM  
+      - This negatively impacts other applications
 
 ---
 
@@ -54,13 +54,13 @@
   - Allocating CPU, RAM, and storage to each VM
   - Isolating VMs from each other
 
-#### Virtual Machines (VMs)
+#### Virtual Machines (VMs):
 Each VM contains:
 - **VM 1** - Its own OS (OS 1). Its own Application (App 1)
 - **VM 2** - Its own OS (OS 2). Its own Application (App 2)
 Each VM behaves like a **separate computer**
 
-#### Advantages of Virtualization
+#### Advantages of Virtualization:
 1. Better Isolation: If **VM 1 crashes**, **VM 2 is not affected**
 2. Dependency Issues Solved: 
    - App 1 can use **Java 8**
@@ -68,42 +68,42 @@ Each VM behaves like a **separate computer**
    - Each VM has its **own OS**
 3. Better Resource Utilization: One physical server can run **multiple VMs**
 
-#### Problems with Virtualization
+#### Problems with Virtualization:
 1. Heavy Resource Usage: Every VM has- Its own OS, Its own memory and OS duplication leads to **resource wastage**
 2. Slow Startup: Virtual machines take **minutes to boot**
 3. High Cost: It Requires more: RAM, CPU, Storage
 4. Complex Management: OS patching and updates are needed for **every VM**
 
 ---
-## 3️. Docker / Containerization
+## 3️. Docker / Containerization:
 <img width="600" height="300" alt="Image" src="https://github.com/user-attachments/assets/93bc995e-7b5a-4737-9ade-d3c8bd30454f" />
 In **containerization**, multiple applications run as **containers** on **one operating system**, using a **Docker Engine** instead of a hypervisor.
   - Containers do **NOT** need a full operating system of their own.
-####  Hardware
+####  Hardware:
 - The physical machine
 - Examples: CPU, RAM, Disk, Network
 
-####  Operating System
+####  Operating System:
 - A single OS installed on the hardware
 - Usually: Linux (most common)
    - Windows (for Windows containers)
    - This OS provides the **kernel**
  *The kernel is shared by all containers.*
 
-####  Docker Engine
+####  Docker Engine:
 - The **heart of containerization**
 - Runs on top of the operating system
 - Responsible for: Creating containers, Running containers, Managing images, networking, and storage
 *Think of Docker Engine as a lightweight container manager, not a VM manager.*
 
-####  Containers (con1, con2)
+####  Containers (con1, con2):
 Each container includes: - Application (App 1 / App 2), Required libraries and dependencies
 - Containers do **NOT** include:
    - A full operating system
    - Their own kernel
  All containers **share the host OS kernel**
 
-####  Virtual Machines vs Containers
+####  Virtual Machines vs Containers:
 
 | Virtual Machines | Containers |
 |------------------|------------|
@@ -112,7 +112,7 @@ Each container includes: - Application (App 1 / App 2), Required libraries and d
 | Takes minutes to start | Starts in seconds |
 | High resource usage | Low resource usage |
 
-#### Advantages of Docker / Containerization
+#### Advantages of Docker / Containerization:
 1. Lightweight
    - No OS duplication
    - Uses less CPU and RAM
@@ -126,7 +126,7 @@ Each container includes: - Application (App 1 / App 2), Required libraries and d
 5. Easy Scalability
    - Applications can be scaled up or down quickly
 
-#### Limitations of Containers
+#### Limitations of Containers:
 - Containers share the same OS kernel
 - Less isolation compared to virtual machines (but sufficient for most use cases)
 - Mostly Linux-based (Windows support is improving)
