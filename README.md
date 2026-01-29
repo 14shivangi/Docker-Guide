@@ -4,7 +4,7 @@
 A container is a standard unit of software that packages up code and all its dependencies so the application runs quickly and reliably from one computing environment to another. A Docker container image is a lightweight, standalone, executable package of software that includes everything needed to run an application: code, runtime, system tools, system libraries and settings.
 A container is a bundle of Application, Application libraries required to run your application and the minimum system dependencies.
 
-<img width="900" height="402" alt="Image" src="https://github.com/user-attachments/assets/2b3d44a1-33a1-4b4f-b03f-6b20b0a298f7" />
+<img width="900" height="602" alt="Image" src="https://github.com/user-attachments/assets/2b3d44a1-33a1-4b4f-b03f-6b20b0a298f7" />
 
 ## Containers vs Virtual Machine 
 
